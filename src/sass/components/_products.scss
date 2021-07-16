@@ -11,9 +11,13 @@
 }
 
 .grid__item {
-  flex-basis: calc(100% / 3 - 16px);
+  /*flex-basis: calc(100% / 3 - 16px);*/
   min-width: 240px;
   margin-right: 8px;
   margin-left: 8px;
   margin-bottom: 16px;
+}
+
+.product__text-part {
+  background-color: $background-hero-color;
 }
