@@ -4,6 +4,27 @@
   padding-bottom: 98px;
 }
 
+.section__title {
+  color: $subtitle-color;
+  font-family: $accent-font;
+  font-size: 34px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 31px;
+  margin-top: 15px;
+}
+
+.section__label {
+  color: $presubtitle-color;
+  font-family: $accent-font;
+  font-size: 18px;
+  line-height: 1.17;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .grid {
   list-style: none;
   display: flex;
