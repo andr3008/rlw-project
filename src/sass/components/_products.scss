@@ -1,0 +1,129 @@
+.product-section {
+  background-color: $title-color;
+  padding-top: 121px;
+  padding-bottom: 98px;
+}
+
+.section__title {
+  color: $subtitle-color;
+  font-family: $accent-font;
+  font-size: 34px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 31px;
+  margin-top: 15px;
+}
+
+.section__label {
+  color: $presubtitle-color;
+  font-family: $accent-font;
+  font-size: 18px;
+  line-height: 1.17;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.grid {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: -17px;
+}
+
+.grid__item {
+  margin-bottom: 17px;
+  margin-left: 20px;
+  margin-right: 20px;
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 3 - 16px);
+  }
+}
+
+.product {
+  max-width: 280px;
+
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 252px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-left: 16px;
+    padding-right: 15px;
+    margin-bottom: -139px;
+    vertical-align: middle;
+  }
+  &--one::before {
+    background-image: url(/images/products/pic1_m_1x-min.png);
+  }
+
+  &--two::before {
+    background-image: url(/images/products/pic2_m_1x-min.png);
+  }
+  &--three::before {
+    background-image: url(/images/products/pic3_m_1x-min.png);
+  }
+}
+
+.product__name {
+  font-family: $accent-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  position: relative;
+  padding-top: 161px;
+
+  &::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 26px;
+    height: 6px;
+    background-image: url(/images/icons/group4.svg);
+    background-size: 26px 6px;
+    bottom: -30px;
+    left: 45%;
+  }
+}
+
+.product__description {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  padding: 30px 39px 30px 41px;
+}
+
+.product__about {
+  text-align: center;
+  border-radius: 24px;
+  &--one {
+    background-color: $background-hero-color;
+  }
+
+  &--two {
+    background-color: #f0d1a5;
+  }
+
+  &--three {
+    background-color: #c2e297;
+  }
+}
+
+.product__button {
+  height: 40px;
+  width: 40px;
+  background-image: url(/images/icons/arrow-right_p.svg);
+  margin-bottom: 41px;
+  border: none;
+  border-radius: 50%;
+}
