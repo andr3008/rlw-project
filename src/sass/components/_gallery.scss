@@ -1,8 +1,12 @@
 .gallery {
-  width: 100%;
-  height: 122px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-bottom: 400px;
+
+  background-color: $title-color;
+  overflow: hidden;
+  min-width: 364px;
+  min-height: 122px;
+  margin-left: -18px;
+  margin-right: -26px;
   background-size: cover;
   background-position: center;
   background-image: url(/images/gallery/pic_m_1x-min.jpg);
@@ -15,7 +19,10 @@
   }
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {
-    height: 262px;
+    min-width: 786px;
+    min-height: 264px;
+    margin-left: -9px;
+    margin-right: -9px;
     background-image: url(/images/gallery/pic_t_1x-min.jpg);
 
     @media screen and (min-device-pixel-ratio: 2),
@@ -27,7 +34,10 @@
   }
 
   @media screen and (min-width: 1280px) {
-    height: 430px;
+    min-width: 1280px;
+    min-height: 430px;
+    margin-left: auto;
+    margin-right: auto;
     background-image: url(/images/gallery/pic_d_1x-min.jpg);
 
     @media screen and (min-device-pixel-ratio: 2),
