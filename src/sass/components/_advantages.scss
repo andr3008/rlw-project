@@ -1,0 +1,129 @@
+.section-advantages {
+  background-color: $main-section-background-color;
+  padding-bottom:145px;
+}
+.prodact {
+  margin-top: 16px;
+ 
+  &_text {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 170%;
+    color: $main-text-color;
+    
+  }
+  &_slogan{
+    font-family: $accent-font;
+    width: 98px;
+    height: 56px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 1.138;
+    color: $subtitle-color;
+  }
+}
+
+.grid_items {
+  margin-bottom: 38px;
+  &::before {
+    display: inline-block;
+    content: '';
+    height: 50px;
+    background-color: $main-section-background-color;
+    background-repeat: no-repeat;
+  }
+  &-milk::before {
+    width: 33px;
+    background-image: url(/images/advantages/iconmilk.png);
+  }
+  &-apple::before {
+    width: 50px;
+    background-image: url(/images/advantages/iconapple.png);
+  }
+  &-candy::before {
+    width: 44px;
+    background-image: url(/images/advantages/iconcandy.png);
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.subtitle_is-hidden {
+  display: none;
+}
+
+@media screen and (max-width: 767px){
+ .advantages{
+   width: 100vw;
+   padding-left: 20px;
+ }
+  .grid_items-milk{
+    margin-top: -20px;
+  }
+ 
+}
+@media screen and (min-width: 768px) {
+  .advantages{
+    width: auto;
+    padding-left: 36px;
+  }
+  .section-advantages{
+    padding-bottom: 140px;
+    
+  }
+ .grid{
+   display: flex;
+ }
+ 
+  .grid_items{
+    margin-top: -25px;
+    margin-right: 60px;
+    margin-bottom: 0;
+  }
+  .grid_items-margin{
+    margin-right: 0;
+  }
+  .prodact{
+    margin-top: 36px;
+  }
+  .prodact_slogan{
+    font-size: 48px;
+    line-height: 1.145;
+    letter-spacing: 0.04em;
+    margin-bottom: 13px;
+  }
+  
+}
+@media screen and (min-width: 1200px){
+  .advantages{
+    width: auto;
+    padding-left: 115px;
+    
+  }
+  .section-advantages{
+    padding-bottom: 310px;
+    
+  }
+  
+  .grid_items{
+    margin-top: -25px;
+    margin-right: 30px;
+   
+  }
+  .grid_items-margin{
+    margin-right: 0;
+  }
+  .prodact{
+    margin-top: 40px;
+  }
+   .prodact_slogan{
+    font-size: 58px;
+    line-height: 1.137;
+    letter-spacing: 0.04em;
+    margin-bottom: 15px;
+  }
+  
+}
