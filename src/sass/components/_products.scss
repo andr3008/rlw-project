@@ -225,13 +225,15 @@
   overflow: hidden;
   @media screen and (min-width: 768px) {
     line-height: 1.8;
-    margin: 66px 11px 40px 11px;
+    margin: 66px 0 40px 0;
+    padding: 0 11px 0 11px;
   }
   @media screen and (min-width: 1280px) {
     font-size: 16px;
     line-height: 1.76;
     height: 106px;
-    margin: 70px 44px 62px 44px;
+    margin: 70px 0 62px 0;
+    padding: 0 44px 0 44px;
   }
 }
 
