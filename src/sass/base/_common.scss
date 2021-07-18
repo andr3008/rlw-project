@@ -16,7 +16,7 @@ body {
   max-width: 100%;
   overflow-x: hidden;
   margin: 0;
-  background-color: $secondary-section-background-color;
+  background-color: $title-color;
   color: $title-color;
   font-family: $main-font;
   font-style: normal;
@@ -30,6 +30,7 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  margin: auto;
 }
 a {
   color: inherit;
