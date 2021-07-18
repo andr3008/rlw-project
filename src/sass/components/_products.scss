@@ -52,6 +52,13 @@
 
 .product {
   position: relative;
+  margin-top: 113px;
+  @media screen and (min-width: 768px) {
+    margin-top: 111px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-top: 210px;
+  }
 }
 
 .product {
@@ -265,6 +272,7 @@
   margin-bottom: 41px;
   border: none;
   border-radius: 50%;
+  cursor: pointer;
   transition: transform 250ms;
 
   @media screen and (min-width: 768px) {
