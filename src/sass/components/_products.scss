@@ -2,6 +2,14 @@
   background-color: $title-color;
   padding-top: 121px;
   padding-bottom: 98px;
+  @media screen and (min-width: 768px) {
+    padding-top: 122px;
+    padding-bottom: 112px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 127px;
+    padding-bottom: 119px;
+  }
 }
 
 .grid {
@@ -30,7 +38,16 @@
   }
 
   @media screen and (min-width: 768px) {
-    flex-basis: calc(100% / 3 - 16px);
+    flex-basis: calc(100% / 3 - 17px);
+  }
+}
+
+.section__title {
+  @media screen and (min-width: 768px) {
+    margin-bottom: 39px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 49px;
   }
 }
 
@@ -173,6 +190,16 @@
   margin-bottom: 30px;
   position: relative;
   padding-top: 161px;
+  @media screen and (min-width: 768px) {
+    padding-top: 152px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 163px;
+    margin-bottom: 32px;
+    font-size: 30px;
+    line-height: 1.13;
+  }
 
   &::after {
     content: '';
@@ -193,6 +220,15 @@
   line-height: 1.5;
   letter-spacing: 0.04em;
   padding: 30px 39px 30px 41px;
+  @media screen and (min-width: 768px) {
+    line-height: 1.8;
+    padding: 11px 30px 11px 40px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.76;
+    padding: 44px 32px 44px 62px;
+  }
 }
 
 .product__about {
@@ -218,4 +254,10 @@
   margin-bottom: 41px;
   border: none;
   border-radius: 50%;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 40px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 50px;
+  }
 }
