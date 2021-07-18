@@ -219,15 +219,18 @@
   font-size: 14px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  padding: 30px 39px 30px 41px;
+  margin: 66px 39px 30px 41px;
+  height: 124px;
+  overflow: hidden;
   @media screen and (min-width: 768px) {
     line-height: 1.8;
-    padding: 11px 30px 11px 40px;
+    margin: 66px 11px 40px 11px;
   }
   @media screen and (min-width: 1280px) {
     font-size: 16px;
     line-height: 1.76;
-    padding: 44px 32px 44px 62px;
+    height: 106px;
+    margin: 70px 44px 62px 44px;
   }
 }
 
