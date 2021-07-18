@@ -5,15 +5,25 @@
       how it’s <br />
       made?
     </h2>
-
-    <div>
+    <div class="about__position">
       <picture>
         <source
-          srcset="./images/about/main-pic_t_1x-min.png, ./images/about/main-pic_t_2x-min.png"
+          srcset="./images/about/main-pic_d_1x-min.png 1x, ./images/about/main-pic_d_2x-min.png 2x"
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="./images/about/main-pic_t_1x-min.png 1x, ./images/about/main-pic_t_2x-min.png 2x"
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="./images/about/main-pic_m_1x-min.png 1x, ./images/about/main-pic_m_2x-min.png 2x"
           media="(min-width: 480px)"
         />
-        <img class="about__icons-cow" src="./images/about/main-pic_t_1x-min.png" alt="Cow" />
+        <img src="./images/about/main-pic_m_1x-min.png" alt="Cow" />
       </picture>
+    </div>
+
+    <div class="about-text__position">
       <p class="about-text">
         Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus
         lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
@@ -24,9 +34,8 @@
         maximus. Cras massa nibh, tincidunt.
       </p>
       <p class="about-text__third">Aliquam erat volutpat. Aenean accumsan.</p>
-      <div>
-        <img class="about__bgi" src="./images/about/background-pic_m_1x-min.png" alt="" />
-      </div>
+
+      <img class="about__bgi" src="./images/about/background-pic_m_1x-min.png" alt="water" />
 
       <button class="about__btn" type="submit">Read more</button>
     </div>
