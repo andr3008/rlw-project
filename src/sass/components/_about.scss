@@ -1,0 +1,86 @@
+.about {
+  background-color: $main-section-background-color;
+
+  &__label {
+    padding-top: 125px;
+  }
+  &__icons-cow {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+.about-text {
+  color: $main-text-color;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.58;
+
+  margin-bottom: 37px;
+  padding: 0 50px;
+  width: 100%;
+  height: 79px;
+
+  &__second {
+    color: $secondary-text-color;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.58;
+
+    width: 100%;
+    height: 120px;
+    padding: 0 50px;
+  }
+  &__third {
+    color: $secondary-text-color;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.58;
+    width: 100%;
+    padding: 0 50px;
+    padding-bottom: 17px;
+  }
+}
+.about__bgi {
+  width: 100%;
+  height: 122px;
+  margin-top: -120px;
+}
+
+.about__btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 44px;
+  width: 176px;
+  background: #ffffff;
+  border-radius: 22px;
+  border: none;
+  color: $subtitle-color;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  padding-left: 37px;
+  margin-left: 50px;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &::after {
+    background-image: url(../images/about/Vector-arrow-right.svg);
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+
+    position: absolute;
+    content: '';
+
+    right: 25px;
+    top: 18px;
+  }
+  &:hover {
+    background-color: $hover-button-color;
+    color: $subtitle-color;
+  }
+}
