@@ -6,4 +6,35 @@
   background-size: cover;
   background-position: center;
   background-image: url(/images/gallery/pic_m_1x-min.jpg);
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(/images/gallery/pic_m_2x-min.jpg);
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    height: 262px;
+    background-image: url(/images/gallery/pic_t_1x-min.jpg);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(/images/gallery/pic_t_2x-min.jpg);
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    height: 430px;
+    background-image: url(/images/gallery/pic_d_1x-min.jpg);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(/images/gallery/pic_d_2x-min.jpg);
+    }
+  }
 }
