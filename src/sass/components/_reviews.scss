@@ -1,0 +1,93 @@
+.reviews-section {
+  width: 100vw;
+  height: auto;
+  margin-top: 0;
+}
+.reviews-section__title {
+  display: none;
+  width: 0px;
+  height: 0px;
+  opacity: 0;
+}
+.reviews-container {
+  padding-right: 20px;
+  padding-left: 20px;
+  width: auto;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 0;
+  margin-bottom: 30px;
+  background: #fafafa;
+
+  @media screen and(max-width: 767px) {
+    min-width: 320px;
+  }
+
+  @media screen and(min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and(min-width: 1280px) {
+    width: 1280px;
+  }
+}
+.reviews__card1 {
+  padding-right: 50px;
+  padding-left: 50px;
+  width: 100%;
+  text-align: center;
+}
+.reviews__card1 > img {
+  display: inline-block;
+  margin-bottom: 29px;
+}
+.lines-box {
+  position: relative;
+
+  background-image: repeating-linear-gradient(
+    to top,
+    #e1e1e1,
+    #e1e1e1 2px,
+    #fafafa 2px,
+    #fafafa 31px
+  );
+  color: #e1e1e1;
+  width: 100%;
+  height: 217px;
+  margin-bottom: 50px;
+}
+
+.text-wrapper {
+  position: absolute;
+  z-index: 777;
+  top: 0;
+  left: 0;
+  padding-right: 11px;
+  padding-left: 11px;
+  width: 100%;
+}
+.text-wrapper__text {
+  display: inline-block;
+  width: 100%;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 31px;
+  color: $main-text-color;
+  text-align: center;
+}
+.lines-box::before {
+  content: '';
+  width: 54px;
+  height: 40px;
+  background-image: url(../images/reviews/quotes-min.png);
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  fill: currentColor;
+  margin-bottom: 3px;
+  margin-right: auto;
+  margin-left: 0px;
+}
