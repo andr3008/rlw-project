@@ -254,10 +254,16 @@
   margin-bottom: 41px;
   border: none;
   border-radius: 50%;
+  transition: transform 250ms;
+
   @media screen and (min-width: 768px) {
     margin-bottom: 40px;
   }
   @media screen and (min-width: 1280px) {
     margin-bottom: 50px;
+  }
+  &:hover,
+  &:focus {
+    transform: scale(1.15);
   }
 }
