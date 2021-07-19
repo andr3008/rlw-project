@@ -1,0 +1,119 @@
+ .button_header-buy {
+    color: $subtitle-color;
+    background-color: $title-color;
+    border-radius: 22px;
+    border: none;
+  }
+  
+  .button_modal {
+    color: $subtitle-color;
+    background-color: $title-color;
+    border-radius: 22px;
+    border: none;
+  }
+  .button_modal:hover,
+  .button_modal:focus,
+  .button_header:hover,
+  .button_header:focus {
+    background-color: $hover-button-color;
+  }
+  .button_header {
+    color: $subtitle-color;
+    background-color: $title-color;
+    border-radius: 20px;
+    border: none;
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 8px;
+    line-height: 1.25;
+  }
+  .button_header-prodact {
+    color: $title-color;
+    background-color: $subtitle-color;
+  }
+  .button_header-prodact:hover,
+  .button_header-prodact:focus {
+    background-color: $second-hover-button-color;
+  }
+  @media screen and (max-width: 768px) {
+    .button_header {
+      width: 82.8px;
+      height: 24px;
+      font-family: $main-font;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 8px;
+      line-height: 1.25;
+    }
+    .button_modal {
+      width: 209px;
+      height: 44px;
+      font-family: $main-font;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 1.312;
+    }
+    .button_header-prodact {
+      width: 62.4px;
+      height: 24px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .button_header {
+      width: 82.8px;
+      height: 24px;
+      font-family: $main-font;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 8px;
+      line-height: 1.25;
+    }
+    .button_header-buy {
+      width: 160px;
+      height: 44px;
+      font-family: $main-font;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 1.312;
+    }
+    .button_modal {
+      width: 186px;
+      height: 44px;
+      font-family: $main-font;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 1.312;
+    }
+    .button_header-prodact {
+      width: 61.2px;
+      height: 24px;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    .button_header {
+      width: 138px;
+      height: 40px;
+      font-family: $main-font;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 18px;
+    }
+    .button_header-buy {
+      width: 159px;
+      height: 44px;
+      font-family: $main-font;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 1.312;
+    }
+    .button_header-prodact {
+      width: 104px;
+      height: 40px;
+    }
+  }
