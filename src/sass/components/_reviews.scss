@@ -4,7 +4,7 @@
   margin-top: 0;
 }
 .reviews-section__title {
-  display: none;
+  overflow: hidden;
   width: 0px;
   height: 0px;
   opacity: 0;
@@ -34,7 +34,9 @@
     max-width: 1280px;
   }
 }
-.reviews__card1 {
+.reviews__card1,
+.reviews__card2,
+.reviews__card3 {
   padding-right: 50px;
   padding-left: 50px;
   padding-top: 43px;
@@ -162,4 +164,40 @@
   text-align: center;
   color: $main-text-color;
   margin-bottom: 30px;
+}
+// .slick-arrow {
+//   position: absolute;
+//   width: 12px;
+//   height: 12px;
+//   bottom: 0;
+//   right: 50%;
+//   left: 50%;
+//   z-index: 10;
+//   font-size: 0;
+//   transform: translate(-50%, -50%);
+// }
+.slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slick-dots > li:nth-child(2) {
+  margin-right: 18px;
+  margin-left: 18px;
+}
+.slick-dots > li {
+  list-style: none;
+}
+.slick-dots > li > button {
+  font-size: 0;
+  width: 12px;
+  height: 12px;
+  background-color: #d9d9d9;
+  border-radius: 50%;
+  border: none;
+}
+.slick-dots .slick-active > button {
+  background-image: url(../images/reviews/house.png);
+  border-radius: 0;
+  background-color: $title-color;
 }
