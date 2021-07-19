@@ -1,10 +1,20 @@
 <section class="about">
   <div class="container">
     <p class="section__label about__label">tradition and love</p>
-    <h2 class="section__title">
+    <h2 class="about-section__title">
       how it’s <br />
       made?
     </h2>
+    <picture>
+      <source
+        srcset="
+          ./images/about/background-pic_d_1x-min.png 1x,
+          ./images/about/background-pic_d_2x-min.png 2x
+        "
+        media="(min-width: 1280px)"
+      />
+      <img class="about__desc__bgi" src="./images/about/background-pic_m_1x-min.png" alt="water" />
+    </picture>
     <div class="about__position">
       <picture>
         <source
@@ -34,8 +44,16 @@
         maximus. Cras massa nibh, tincidunt.
       </p>
       <p class="about-text__third">Aliquam erat volutpat. Aenean accumsan.</p>
-
-      <img class="about__bgi" src="./images/about/background-pic_m_1x-min.png" alt="water" />
+      <picture>
+        <source
+          srcset="
+            ./images/about/background-pic_m_1x-min.png 1x,
+            ./images/about/background-pic_m_2x-min.png 2x
+          "
+          media="(min-width: 480px)"
+        />
+        <img class="about__bgi" src="./images/about/background-pic_m_1x-min.png" alt="water" />
+      </picture>
 
       <button class="about__btn" type="submit">Read more</button>
     </div>
