@@ -1,6 +1,30 @@
 .header {
+  background-repeat: no-repeat;
+  background-position: center;
   background-color: $background-hero-color;
-  background-image: not repeat url(/images/header/header-pic_m_1x-min.png);
+  background-image: url(/images/header/header-pic_m_1x-min.png);
+  @media screen and (min-width: 768px) {
+    padding: 120px;
+  }
+}
+.logo {
+  position: absolute;
+  top: 6px;
+  left: 20px;
+}
+.container header {
+  position: relative;
+}
+.menu {
+  display: none;
+}
+.menu__open,
+.menu__close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: $background-hero-color;
+  border: none;
 }
 .hero-title {
   font-family: Titan One;
@@ -20,7 +44,4 @@
   height: 344px;
   background-color: $presubtitle-color;
   border-radius: 50%;
-}
-.menu__close {
-  background-color: $background-hero-color;
 }
