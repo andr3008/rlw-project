@@ -1,7 +1,19 @@
 <header class="header">
   <div class="container">
     <a href="" class="logo"><img src="./images/icons/logo.png" alt=""></a>
+    <button type="button" class="menu__open">
+      <svg width="20px" height="12px" aria-label="Открытие мобильного меню">
+        <use class="menu__icon" href="./images/icons/sprite.svg#icon-menu-open"></use>
+      </svg>
+    </button>
     <nav class="menu">
+      <div class="menu__container">
+          <button type="button" class="menu__close">
+            <svg width="14px" height="14px" aria-label="Закрытие мобильного меню">
+              <use class="icon__close" href="./images/icons/close.svg"></use>
+            </svg>
+          </button>
+      </div>
       <ul class="menu-list">
         <li class="menu-list__item"><span class="menu-list__text">Home</span></li>
         <li class="menu-list__item">About us</li>
@@ -9,27 +21,13 @@
         <li class="menu-list__item">Our products</li>
         <li class="menu-list__item">Contact</li>
       </ul>
-      <button type="button" class="menu__open">
-        <svg width="14px" height="14px" aria-label="Открытие мобильного меню">
-          <use class="menu__icon" href="./images/icons/sprite.svg#icon-menu-open"></use>
-        </svg>
-      </button>
-    </div>
-    <div class="container__mob">
-    <div class="menu__container is-hidden">
-        <button type="button" class="menu__close">
-          <svg width="20px" height="12px" aria-label="Закрытие мобильного меню">
-            <use class="icon__close" href="./images/icons/sprite.svg#icon-close"></use>
-          </svg>
-        </button>
-      </div>
     </nav>
-    <section class="section hero">
-      <div class="hero">
-        <h1 class="hero-title">ice cream <br> made with <br><span class="hero-title__text"> passion</span></h1>
-        <button type="button" class="hero-button">Products</button>
-        <button type="button" class="hero-button">How it’s made?</button> 
-      </div>
-    </section>
   </div>
+  <section class="section hero">
+    <div class="hero">
+      <h1 class="hero-title">ice cream <br> made with <br><span class="hero-title__text"> passion</span></h1>
+      <button type="button" class="hero-button">Products</button>
+      <button type="button" class="hero-button">How it’s made?</button> 
+    </div>
+  </section>
 </header>
