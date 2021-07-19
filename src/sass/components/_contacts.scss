@@ -1,0 +1,168 @@
+.card{
+    background: #FFF5F6;
+}
+.card__list{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    margin-bottom: 54px;
+    @media screen and (min-width: 768px) {
+        flex-direction: row;   
+      }
+    
+      @media screen and (min-width: 1280px) {
+        flex-direction: row; 
+      } 
+}
+.card__box{
+    background-color: #ffffff;
+    max-width: 220px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    
+    @media screen and (min-width: 768px) {
+      max-width: 220px;    
+    }
+  
+    @media screen and (min-width: 1280px) {
+      max-width: 330px;
+    }    
+    
+}
+.card__padding{
+    padding: 43px 20px;
+}
+.card__place{
+    background-color: #F0D1A5;
+    margin-bottom: 25px;
+
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 186%;
+    width: 80px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+    border-radius: 4px;
+    color: #FFFFFF;
+}
+.card__place-foodtruck{
+    background-color: #C2E297;
+    width: 130px;
+}
+.card__city{
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 186%;
+    letter-spacing: 0.04em;
+    color: black;
+    margin-bottom: 10px;
+}
+.card__text{
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 150%;
+    color: #907E82;
+
+    &::after {
+        content: '';
+        border-bottom: 1px solid #E1E1E1;
+        display: block;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    
+}
+.card__work-time{
+    margin-top: 25px;
+    &::after {
+        content: '';
+        border-bottom: 1px solid #E1E1E1;
+        display: block;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+}
+.card__day{
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 186%;
+    color: #000000;
+}
+.card__time{
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 186%;
+    color: #FFA5BA;
+}
+.card__link{
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 150%;
+    color: #907E82;
+}
+// BUTTONS
+.card__buttons{
+    text-align: center;
+    width: 161px;
+    height: 44px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    align-content: center;
+    @media screen and (min-width: 768px) {
+        
+        flex-direction: column; 
+      }
+    
+      @media screen and (min-width: 1280px) {
+    display: flex;  
+        flex-direction: column; 
+      } 
+    
+}
+.card__button{
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    align-items: center;
+    text-align: center;
+    border-radius: 22px;
+    background-color: #D41342;
+    color: #FFFFFF;
+    border: 0px solid transparent;
+    margin-bottom: 10px;
+    width: 161px;
+    height: 44px;
+    &:hover{
+       cursor: pointer; 
+    }
+}
+.card__button-white{
+    background-color: #FFFFFF;
+    color: #D41443;
+    &:hover{
+        background-color: #ECEBEB;
+    }
+}
