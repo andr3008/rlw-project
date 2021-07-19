@@ -51,6 +51,17 @@
 }
 
 .product {
+  position: relative;
+  margin-top: 113px;
+  @media screen and (min-width: 768px) {
+    margin-top: 111px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-top: 210px;
+  }
+}
+
+.product {
   &::before {
     content: '';
     display: inline-block;
@@ -62,7 +73,8 @@
     vertical-align: middle;
     padding-left: 16px;
     padding-right: 15px;
-    margin-bottom: -139px;
+    position: absolute;
+    top: -25%;
 
     @media screen and (min-width: 768px) {
       padding-left: 0;
@@ -74,7 +86,7 @@
     @media screen and (min-width: 1280px) {
       height: 335px;
       background-size: 335px 335px;
-      margin-bottom: -130px;
+      top: -40%;
     }
   }
 }
@@ -260,6 +272,7 @@
   margin-bottom: 41px;
   border: none;
   border-radius: 50%;
+  cursor: pointer;
   transition: transform 250ms;
 
   @media screen and (min-width: 768px) {

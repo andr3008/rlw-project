@@ -2,7 +2,8 @@
   overflow-x: hidden;
   width: 100vw;
   height: 122px;
-  margin-right: -26px;
+  margin-left: auto;
+  margin-right: auto;
   background-size: cover;
   background-position: center;
   background-image: url(/images/gallery/pic_m_1x-min.jpg);
@@ -17,7 +18,6 @@
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     min-width: 786px;
     min-height: 264px;
-    margin-right: -9px;
     background-image: url(/images/gallery/pic_t_1x-min.jpg);
 
     @media screen and (min-device-pixel-ratio: 2),
@@ -31,8 +31,6 @@
   @media screen and (min-width: 1280px) {
     min-width: 1280px;
     min-height: 430px;
-    margin-left: auto;
-    margin-right: auto;
     background-image: url(/images/gallery/pic_d_1x-min.jpg);
 
     @media screen and (min-device-pixel-ratio: 2),
