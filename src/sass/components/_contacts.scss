@@ -1,5 +1,4 @@
 .card {
-
   background: #f0d2d5;
 }
 .card__list {
@@ -9,7 +8,6 @@
   background: #fff5f6;
 }
 .card__list {
-
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -21,14 +19,12 @@
     flex-direction: row;
 
     top: -78px;
-
   }
 
   @media screen and (min-width: 1280px) {
     flex-direction: row;
 
     top: -102px;
-
   }
 }
 .card__box {
@@ -152,7 +148,8 @@
 
   @media screen and (min-width: 1280px) {
     display: flex;
-
+  }
+}
 
 .button__list {
   text-align: center;
@@ -160,7 +157,6 @@
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: center;
-
   }
 }
 .card__button {

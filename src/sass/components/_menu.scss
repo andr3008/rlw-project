@@ -1,98 +1,138 @@
-.mobile-menu__btn {
-  position: relative;
-}
-
 .menu__open {
   position: absolute;
   top: 25px;
   right: 20px;
-
+  background-color: $title-color;
+  color: $subtitle-color;
   border: none;
-  background-color: transparent;
   cursor: pointer;
-  background-color: aqua;
-  fill: currentColor;
   @media screen and (min-width: 768px) {
+    top: 52px;
+    right: 224px;
+  }
+  @media screen and (min-width: 1280px) {
     display: none;
   }
+
+  &:hover,
+  &:focus {
+    color: $second-hover-button-color;
+  }
 }
-.menu__open:hover,
-.menu__open:focus {
-  color: red;
+.container__mob {
+  display: flex;
+  justify-content: center;
 }
 
 .menu__container {
   position: absolute;
   background-color: $background-burger-color;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-  padding-top: 48px;
 
-  margin-left: auto;
-  margin-right: auto;
+  min-width: 250px;
+  height: 100vh;
+  padding-top: 60px;
+
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-  padding-left: 3px;
-  @media screen and(min-width: 480px) {
-    padding-left: 40px;
-  }
+
   z-index: 55;
-  .container__mob {
-    position: relative;
+  @media screen and(min-width: 768px) {
+    min-width: 254px;
   }
+
   .menu__close {
     position: absolute;
+    right: 28px;
+    top: 23px;
+    background-color: $background-burger-color;
     border: none;
-    background-color: transparent;
-    right: 20px;
-    top: 25px;
     cursor: pointer;
-    // fill: currentColor;
-    fill: yellow;
-    background-color: yellow;
+
+    @media screen and(min-width: 768px) {
+      right: 34px;
+    }
   }
+
   .menu__close:hover,
   .menu__close:focus {
-    color: red;
+    color: $second-hover-button-color;
   }
 }
+.btn-position {
+  display: flex;
+  justify-content: center;
+}
 .button_header-buy {
-  color: $subtitle-color;
-  background-color: $title-color;
-  border-radius: 22px;
-  border: none;
+  position: relative;
+  display: flex;
+  align-items: center;
   width: 209px;
   height: 44px;
-}
-.mobile__menu {
-  // padding-left: 21px;
-}
-.mobile__menu__item {
-  border-top: 2px solid gray;
-  border-bottom: 2px solid gray;
-  width: 100%;
-  height: 42px;
-  margin-bottom: 32px;
+
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  padding-left: 60px;
+
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &::after {
+    background-image: url(../images/about/Vector-arrow-right.svg);
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+
+    position: absolute;
+    content: '';
+
+    right: 40px;
+    top: 18px;
+    @media screen and(min-width: 768px) {
+      right: 22px;
+    }
+  }
+  &:hover {
+    background-color: $hover-button-color;
+    color: $second-hover-button-color;
+  }
 }
 
+.mobile__menu {
+  margin-top: 19px;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #e18298;
+    width: 100%;
+    height: 42px;
+  }
+  &__last-item {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #e18298;
+    border-bottom: 1px solid #e18298;
+    height: 42px;
+  }
+}
 .mobile__menu__link {
-  text-decoration: none;
-  font-weight: bold;
+  padding-left: 21px;
+
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.28;
 
   color: $title-color;
   &:hover,
   &:focus {
-    color: red;
+    color: $subtitle-color;
     text-decoration: none;
   }
 
   &--active {
-    position: relative;
     color: $subtitle-color;
   }
 }
