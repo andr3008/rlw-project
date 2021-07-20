@@ -1,18 +1,11 @@
-.container.header {
+.header {
   position: relative;
-  width: 100vw;
-  height: 502px;
-  background-repeat: no-repeat;
-  background-position: center;
   background-color: $background-hero-color;
-  background-image: url(/images/header/header-pic_m_1x-min.png);
-  @media screen and (min-width: 320px) {
-    padding: 120px;
-  }
-}
-.logo {
   &::before {
     position: absolute;
+    top: 50%;
+    left: 36px;
+    transform: translateY(-50%);
     content: '';
     display: inline-block;
     width: 346px;
@@ -20,12 +13,31 @@
     border-radius: 50%;
     background: #ffa5ba;
   }
+  @media screen and (min-width: 768px) {
+  }
+}
+.container.head {
+  position: relative;
+  width: 100vw;
+  height: 502px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(/images/header/header-pic_m_1x-min.png);
+  @media screen and (min-width: 768px) {
+  }
+}
+.logo {
   position: absolute;
   top: 6px;
   left: 20px;
+  @media screen and (min-width: 768px) {
+  }
 }
+
 .menu {
   display: none;
+  @media screen and (min-width: 768px) {
+  }
 }
 .menu__open,
 .menu__close {
@@ -34,6 +46,8 @@
   right: 15px;
   background-color: $background-hero-color;
   border: none;
+  @media screen and (min-width: 768px) {
+  }
 }
 .hero-title {
   font-family: Titan One;
@@ -47,11 +61,16 @@
     font-size: 34px;
     line-height: 39px;
   }
+  @media screen and (min-width: 768px) {
+  }
 }
 .section.hero {
   position: absolute;
   top: 193px;
   left: 20px;
+  z-index: 3;
+  @media screen and (min-width: 768px) {
+  }
 }
 .hero-button {
   width: 61.2px;
@@ -65,5 +84,7 @@
     color: $title-color;
     background: $subtitle-color;
     border-radius: 20px;
+  }
+  @media screen and (min-width: 768px) {
   }
 }
