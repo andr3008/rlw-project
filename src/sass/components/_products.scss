@@ -228,6 +228,7 @@
 }
 
 .product__description {
+  overflow-x: hidden;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.5;
@@ -267,6 +268,8 @@
 }
 
 .product__button {
+  display: inline-block;
+  position: relative;
   height: 40px;
   width: 40px;
   background-image: url(/images/icons/arrow-right_p.svg);
@@ -298,10 +301,14 @@
 }
 /* кнопка закрытия окна */
 .modal .btn-close {
-  color: #aaa;
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-image: url(/images/icons/arrow-right_p.svg);
+  border: none;
+  border-radius: 50%;
   cursor: pointer;
-  font-size: 30px;
-  text-decoration: none;
+  transition: transform 250ms;
   position: absolute;
   right: 5px;
   top: 0;
@@ -313,7 +320,7 @@
 .modal-wrap:before {
   content: '';
   display: none;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(209, 164, 164, 0.6);
   position: fixed;
   top: 0;
   left: 0;
@@ -337,63 +344,20 @@
 }
 .modal-open:checked ~ .modal-wrap .modal-dialog {
   transform: translate(-50%, 0);
-  top: 20%;
+  top: 30%;
 }
+
 /* элементы модального окна */
 .modal-dialog {
-  background: #fefefe;
-  border: #555555 solid 1px;
-  border-radius: 5px;
+  background: #c2e297;
+  border-radius: 24px;
   position: fixed;
   left: 50%;
   top: -100%;
   transform: translate(-50%, -500%);
   transition: transform 0.4s ease-out;
   width: 80%;
-  max-width: 500px;
+  max-width: 320px;
   z-index: 103;
-}
-.modal-body {
-  padding: 20px;
-}
-.modal-body p {
-  margin: 0;
-}
-.modal-header,
-.modal-footer {
-  padding: 20px 20px;
-}
-.modal-header {
-  border-bottom: #eaeaea solid 1px;
-}
-.modal-header h2 {
-  font-size: 20px;
-  margin: 0;
-}
-
-/* кнопки */
-.btn {
-  background: #fff;
-  border: #555 solid 1px;
-  border-radius: 3px;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 14px;
-  padding: 8px 15px;
-  text-decoration: none;
-  text-align: center;
-  min-width: 60px;
-  position: relative;
-}
-.btn:hover,
-.btn:focus {
-  background: #f2f2f2;
-}
-.btn-primary {
-  background: #428bca;
-  border-color: #357ebd;
-  color: #fff;
-}
-.btn-primary:hover {
-  background: #66a1d3;
+  padding: 40px;
 }
