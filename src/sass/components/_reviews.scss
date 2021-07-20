@@ -2,14 +2,15 @@
   width: 100vw;
   height: auto;
   margin-top: 80px;
-  margin-bottom: 86px;
+  margin-bottom: 170px;
+
   @media screen and(min-width: 768px) {
     margin-top: 121px;
-    margin-bottom: 119px;
+    margin-bottom: 197px;
   }
   @media screen and(min-width: 1280px) {
     margin-top: 123px;
-    margin-bottom: 132px;
+    margin-bottom: 234px;
   }
 }
 .reviews-section__title {
@@ -66,6 +67,7 @@
     padding-top: 32px;
     padding-bottom: 32px;
     margin-bottom: 42px;
+    margin-top: 19px;
   }
   @media screen and(min-width: 1280px) {
     padding-right: 38px;
@@ -112,7 +114,7 @@
       #e1e1e1,
       #e1e1e1 2px,
       #fafafa 2px,
-      #fafafa 37px
+      #fafafa 38px
     );
   }
 }
