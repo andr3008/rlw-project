@@ -1,19 +1,28 @@
-.header {
+.container.header {
+  position: relative;
+  width: 100vw;
+  height: 502px;
   background-repeat: no-repeat;
   background-position: center;
   background-color: $background-hero-color;
   background-image: url(/images/header/header-pic_m_1x-min.png);
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 320px) {
     padding: 120px;
   }
 }
 .logo {
+  &::before {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    width: 346px;
+    height: 344px;
+    border-radius: 50%;
+    background: #ffa5ba;
+  }
   position: absolute;
   top: 6px;
   left: 20px;
-}
-.container header {
-  position: relative;
 }
 .menu {
   display: none;
@@ -32,16 +41,29 @@
   line-height: 30px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+  margin-bottom: 19px;
   &__text {
     color: $subtitle-color;
     font-size: 34px;
     line-height: 39px;
   }
 }
-.hero-title::after {
-  content: '';
-  width: 346px;
-  height: 344px;
-  background-color: $presubtitle-color;
-  border-radius: 50%;
+.section.hero {
+  position: absolute;
+  top: 193px;
+  left: 20px;
+}
+.hero-button {
+  width: 61.2px;
+  height: 24px;
+  font-size: 8px;
+  line-height: 10px;
+  color: $subtitle-color;
+  border-radius: 20px;
+  border: none;
+  &:hover {
+    color: $title-color;
+    background: $subtitle-color;
+    border-radius: 20px;
+  }
 }
