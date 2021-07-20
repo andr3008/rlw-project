@@ -8,7 +8,7 @@
     justify-content: center;
     flex-direction: column;
     align-content: center;
-    margin-bottom: 54px;
+    margin-bottom: 34px;
     @media screen and (min-width: 768px) {
         flex-direction: row;   
       }
@@ -120,23 +120,27 @@
     color: #907E82;
 }
 // BUTTONS
-.card__buttons{
-    text-align: center;
+.buttton{
+    display: flex;
+}
+.button__list{
     width: 161px;
     height: 44px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-direction: row;
-    align-content: center;
+    text-align: center;
+    display: unset;
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-content: center;
+    // flex-direction: row;
+    // align-content: center;
     @media screen and (min-width: 768px) {
         
-        flex-direction: column; 
+        display: flex;; 
       }
     
       @media screen and (min-width: 1280px) {
-    display: flex;  
-        flex-direction: column; 
+        display: flex;  
+        ; 
       } 
     
 }
@@ -162,7 +166,20 @@
 .card__button-white{
     background-color: #FFFFFF;
     color: #D41443;
+    margin-bottom: 0;
+    
     &:hover{
-        background-color: #ECEBEB;
+        background-color: rgba(255, 245, 246, 0);
     }
+}
+.button__svg{
+    margin-left: 13px;
+}
+.button__svg-white{
+    fill: #FFFFFF;
+    margin-left: 8px;
+    
+}
+.button__svg-red{
+    fill: #D41443;
 }
