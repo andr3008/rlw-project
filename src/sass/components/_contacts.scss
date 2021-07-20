@@ -2,6 +2,8 @@
   background: #fff5f6;
 }
 .card__list {
+  position: relative;
+  top: -84px;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -11,10 +13,12 @@
   margin-bottom: 34px;
   @media screen and (min-width: 768px) {
     flex-direction: row;
+    top: -78px;
   }
 
   @media screen and (min-width: 1280px) {
     flex-direction: row;
+    top: -102px;
   }
 }
 .card__box {
