@@ -1,15 +1,10 @@
 .card {
-
-  background: #f0d2d5;
+  background: #fff5f6;
 }
+
 .card__list {
   position: relative;
   top: -84px;
-
-  background: #fff5f6;
-}
-.card__list {
-
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -17,18 +12,15 @@
   flex-direction: column;
   align-content: center;
   margin-bottom: 34px;
+
   @media screen and (min-width: 768px) {
     flex-direction: row;
-
     top: -78px;
-
   }
 
   @media screen and (min-width: 1280px) {
     flex-direction: row;
-
     top: -102px;
-
   }
 }
 .card__box {
@@ -54,7 +46,6 @@
 .card__place {
   background-color: #f0d1a5;
   margin-bottom: 25px;
-
   font-family: $main-font;
   font-style: normal;
   font-weight: 500;
@@ -149,18 +140,16 @@
   @media screen and (min-width: 768px) {
     display: flex;
   }
-
   @media screen and (min-width: 1280px) {
     display: flex;
-
+  }
+}
 
 .button__list {
   text-align: center;
-
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: center;
-
   }
 }
 .card__button {
