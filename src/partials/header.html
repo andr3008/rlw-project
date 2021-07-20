@@ -1,16 +1,6 @@
 <header class="header">
   <div class="container header">
     <a href="" class="logo"><img src="./images/icons/logo.png" alt=""></a>
-    <button type="button" class="menu__open">
-      <svg width="20px" height="12px" aria-label="Открытие мобильного меню">
-        <use class="menu__icon" href="./images/icons/sprite.svg#icon-menu-open"></use>
-      </svg>
-    </button>
-    <button type="button" class="menu__close">
-      <svg width="14px" height="14px" aria-label="Закрытие мобильного меню">
-        <use class="icon__close" href="./images/icons/close.svg"></use>
-      </svg>
-    </button>
     <nav class="menu">
       <ul class="menu-list">
         <li class="menu-list__item"><span class="menu-list__text">Home</span></li>
@@ -20,6 +10,41 @@
         <li class="menu-list__item">Contact</li>
       </ul>
     </nav>
+    <button type="button" class="menu__open">
+      <svg width="20px" height="12px" aria-label="Открытие мобильного меню">
+        <use class="menu__icon" href="./images/icons/sprite.svg#icon-menu-open"></use>
+      </svg>
+    </button>
+    <div class="container__mob">
+      <div class="menu__mob is-hidden">
+        <button type="button" class="menu__close">
+          <svg width="14px" height="14px" aria-label="Закрытие мобильного меню">
+            <use class="icon__close" href="./images/icons/sprite.svg#icon-clse"></use>
+          </svg>
+        </button>
+
+        <nav>
+          <ul class="menu-list-mob">
+            <li class="menu-list-mob__item">
+              <a href="./index.html" class="menu-list-mob__link menu-list-mob__link--active">Home</a>
+            </li>
+            <li class="menu-list-mob__item">
+              <a href="" class="menu-list-mob__link">About us</a>
+            </li>
+            <li class="menu-list-mob__item">
+              <a href="" class="menu-list-mob__link">How it’s made?</a>
+            </li>
+            <li class="menu-list-mob__item">
+              <a href="" class="menu-list-mob__link">Our products</a>
+            </li>
+            <li class="menu-list-mob__item">
+              <a href="" class="menu-list-mob__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    
   </div>
   <section class="section hero">
     <div class="hero">
