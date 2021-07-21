@@ -1,27 +1,55 @@
 .footer {
-    background-color: #FFF5F6;
+    background-color: $main-section-background-color;
     padding-top: 113px;
-    padding-bottom: 30px;
+    padding-bottom: 25px;
     width: 100%;
     padding-left: 20px;
     padding-right: 20px;
     @media screen and (min-width: 768px) {
-      padding-top: 122px;
-      padding-bottom: 112px;
+      padding-top: 158px;
+      padding-bottom: 18px;
     }
     @media screen and (min-width: 1280px) {
-      padding-top: 127px;
-      padding-bottom: 119px;
+      padding-top: 165px;
+      padding-bottom: 10px;
     }
   }
+.footer-container{
+    
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+      }
+      @media screen and (min-width: 1280px) {
+        display: flex;
+        justify-content: space-between;
+      }
+}
 .footer .section__label{
     width: 234px;
     text-align: left;
-    
+    margin-bottom: 31px;
+    @media screen and (min-width: 768px) {
+        width: 340px;
+        margin-bottom: 0;
+      }
+      @media screen and (min-width: 1280px) {
+        width: 474px;
+        margin-bottom: 0;
+      }
 }
 .footer .section__title{
     text-align: inherit;
     margin-top: 17px;
+    margin-bottom: 0;
+    
+    @media screen and (min-width: 768px) {
+        margin-bottom: 0;
+        font-size: 48px;
+      }
+      @media screen and (min-width: 1280px) {
+        margin-bottom: 0;
+      }
 }
 .networks{
     display: block;
@@ -33,7 +61,11 @@
     margin-top: 43x;
     border-radius: 50%;
     margin-bottom: 46px;
-    
+   
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 50px;
+        
+    }
 }
 .networks__box{
     border-radius: 50%;
@@ -43,7 +75,7 @@
 .networks__icon{
     width: 20px;
     height: 20px;
-    fill: #fff;
+    fill: $title-color;
 }
 .networks__link{
     width: 32px;
@@ -51,14 +83,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    fill: #fff;
+    fill: $title-color;
     border-radius: 50%;
     transition-property: background, color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     &:hover{
         cursor: pointer;
-        background-color: #D41443;
+        background-color: $button-color;
+    }
+    @media screen and (min-width: 768px) {
+        width: 34px;
+        height: 34px;
+      }
+      @media screen and (min-width: 1280px) {
+        width: 34px;
+        height: 34px;
     }
 }
 .footer__text{
@@ -68,31 +108,63 @@
     font-size: 12px;
     line-height: 186%;
     text-align: right;
-    color: #000;
+    color: $main-text-color;
     display: block;
     text-align: right;
     margin-right: 28.24px;
-
-    &::after {
+    
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+      }
+      @media screen and (min-width: 1280px) {
+        font-size: 16px;
+    }
+}
+.footer__number{
+    color: $button-color;
+}
+.copyright{
+    &::before {
         content: '';
         border-bottom: 1px solid #E1E1E1;
         display: block;
         margin-bottom: 22px;
         margin-top: 46px;
+        @media screen and (min-width: 768px) {
+            margin-bottom: 29px;
+            margin-top: 91px;
+          }
+          @media screen and (min-width: 1280px) {
+            margin-bottom: 9px;
+            margin-top: 97px;
+        }
+    }
+    @media screen and (min-width: 768px) {
+        width: auto;
+        
+      }
+      @media screen and (min-width: 1280px) {
+        width: auto;
+        
     }
 }
-.footer__number{
-    color: #D41443;
-    
-}
-.footer__copyright{
+.copyright__text{
     font-family: $main-font;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
     line-height: 152%;
     text-align: center;
-    color: #907E82;
-    width: 150px;
+    color: $secondary-text-color;
+    width: 149px;
     margin: 0 auto;
+    
+    @media screen and (min-width: 768px) {
+        width: auto;
+        line-height: 186%;
+      }
+      @media screen and (min-width: 1280px) {
+        width: auto;
+        line-height: 186%;
+    }
 }
