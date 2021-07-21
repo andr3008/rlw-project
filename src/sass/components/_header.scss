@@ -1,1 +1,138 @@
 
+.header {
+  position: relative;
+  background-color: $background-hero-color;
+  z-index: -2;
+  /*  &::before {
+    position: absolute;
+    top: 50%;
+    left: 36px;
+    transform: translateY(-50%);
+    content: '';
+    display: inline-block;
+    width: 346px;
+    height: 344px;
+    border-radius: 50%;
+    background: #ffa5ba;
+  } */
+  @media screen and (min-width: 768px) {
+    /* &::before {
+      width: 324px;
+      height: 322px;
+      left: 307px;
+    } */
+  }
+}
+.container.header {
+  position: relative;
+  width: 100vw;
+  height: 502px;
+  @media screen and (min-width: 768px) {
+  }
+}
+.logo {
+  position: absolute;
+  top: 6px;
+  left: 20px;
+  @media screen and (min-width: 768px) {
+    top: 37px;
+    left: 34px;
+  }
+}
+.hero-img {
+  position: absolute;
+  top: 50%;
+  left: 117px;
+  transform: translateY(-50%);
+  z-index: -1;
+}
+
+.menu {
+  display: none;
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 16px;
+    line-height: 21px;
+  }
+}
+.menu__open,
+.menu__close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: $background-hero-color;
+  border: none;
+  @media screen and (min-width: 768px) {
+    top: 52px;
+    right: 226px;
+  }
+}
+.section.hero {
+  position: absolute;
+  top: 193px;
+  left: 20px;
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 36px;
+    transform: translateY(-50%);
+    content: '';
+    display: inline-block;
+    width: 346px;
+    height: 344px;
+    border-radius: 50%;
+    background: #ffa5ba;
+    z-index: -1;
+  }
+  @media screen and (min-width: 768px) {
+  }
+}
+.hero-title {
+  font-family: Titan One;
+  font-size: 26px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 19px;
+  &__text {
+    color: $subtitle-color;
+    font-size: 34px;
+    line-height: 39px;
+  }
+  @media screen and (min-width: 768px) {
+  }
+}
+.hero-button {
+  width: 61.2px;
+  height: 24px;
+  font-size: 8px;
+  line-height: 10px;
+  color: $subtitle-color;
+  border-radius: 20px;
+  border: none;
+  &:hover {
+    color: $title-color;
+    background: $subtitle-color;
+    border-radius: 20px;
+  }
+  @media screen and (min-width: 768px) {
+  }
+}
+.hero__numeral {
+  display: none;
+}
+.hero__text {
+  display: none;
+}
+.hero-img__milk {
+  display: none;
+}
+.hero-img__girl {
+  display: none;
+}
+.hero-button__riht {
+  display: none;
+}
+
