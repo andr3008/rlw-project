@@ -1,40 +1,39 @@
 .card {
-
-  background: #fff5f6;
-
-  background: #f0d2d5;
-
+  background: $main-section-background-color;
+  @media screen and (min-width: 1280px) {
+    background-image:  url(../images/icons/icons-contacts-footer/contacts-background.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 1280px 382px;
+  }
 }
+
 .card__list {
-  position: relative;
-  top: -84px;
-
-
-  background: #fff5f6;
-}
-.card__list {
-
+  
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   flex-direction: column;
   align-content: center;
-  margin-bottom: 34px;
+  position: relative;
+  top: -94.5px;
+  margin-bottom: -60.5px;
+  
   @media screen and (min-width: 768px) {
+    margin-bottom: -33.5px;
     flex-direction: row;
-
     top: -78px;
   }
 
   @media screen and (min-width: 1280px) {
+    margin-bottom: -28.5px;
     flex-direction: row;
-
     top: -102px;
   }
 }
 .card__box {
-  background-color: #ffffff;
+  background-color: $title-color;
   max-width: 220px;
   margin-bottom: 20px;
   margin-left: 10px;
@@ -53,56 +52,15 @@
 }
 .card__padding {
   padding: 43px 20px;
-}
-.card__place {
-  background-color: #f0d1a5;
-  margin-bottom: 25px;
-
-  font-family: $main-font;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 186%;
-  width: 80px;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.04em;
-  border-radius: 4px;
-  color: #ffffff;
-}
-.card__place-foodtruck {
-  background-color: #c2e297;
-  width: 130px;
-}
-.card__city {
-  font-family: $main-font;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 186%;
-  letter-spacing: 0.04em;
-  color: black;
-  margin-bottom: 10px;
-}
-.card__text {
-  font-family: $main-font;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 150%;
-  color: #907e82;
-
-
-
+  @media screen and (min-width: 768px) {
+    padding: 50px 32px;
+  }
   @media screen and (min-width: 1280px) {
-    max-width: 330px;
+    padding: 51px 44px 62px 43px;
   }
 }
-.card__padding {
-  padding: 43px 20px;
-}
 .card__place {
-  background-color: #f0d1a5;
+  background-color: $card-pace-background-brown;
   margin-bottom: 25px;
 
   font-family: $main-font;
@@ -115,11 +73,21 @@
   text-align: center;
   letter-spacing: 0.04em;
   border-radius: 4px;
-  color: #ffffff;
+  color: $title-color;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 73px;
+  }
 }
 .card__place-foodtruck {
-  background-color: #c2e297;
+  background-color: $card-pace-background-green;
   width: 130px;
+  @media screen and (min-width: 768px) {
+    width: 138px;
+  }
 }
 .card__city {
   font-family: $main-font;
@@ -128,8 +96,15 @@
   font-size: 12px;
   line-height: 186%;
   letter-spacing: 0.04em;
-  color: black;
+  color: $main-text-color;
   margin-bottom: 10px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+  }
 }
 .card__text {
   font-family: $main-font;
@@ -137,15 +112,15 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 150%;
-  color: #907e82;
+  color: $secondary-text-color;
 
-
-  &::after {
-    content: '';
-    border-bottom: 1px solid #e1e1e1;
-    display: block;
-    margin-top: 25px;
-    margin-bottom: 25px;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 166%;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 183%;
   }
 }
 .card__work-time {
@@ -156,6 +131,15 @@
     display: block;
     margin-top: 25px;
     margin-bottom: 25px;
+    @media screen and (min-width: 768px) {
+      margin-top: 30px;
+      margin-bottom: 30px; 
+    }
+    @media screen and (min-width: 1280px) {
+      margin-top: 32px;
+      margin-bottom: 32px;
+  
+    }
   }
 }
 .card__day {
@@ -164,15 +148,29 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 186%;
-  color: #000000;
+  color: $main-text-color;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+  }
 }
 .card__time {
-  font-family: DM Sans;
+  font-family: $main-font;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 186%;
-  color: #ffa5ba;
+  color: $presubtitle-color;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+  }
 }
 .card__link {
   font-family: $main-font;
@@ -180,7 +178,16 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 150%;
-  color: #907e82;
+  color: $secondary-text-color;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 183%;  
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 183%;
+
+  }
 }
 // BUTTONS
 
@@ -190,39 +197,20 @@
 .button__list {
 
   text-align: center;
-  @media screen and (min-width: 768px) {
-    display: flex;
-    justify-content: center;
-
-  width: 161px;
-  height: 44px;
-  text-align: center;
-  display: unset;
-  // display: flex;
-  // flex-wrap: wrap;
-  // justify-content: center;
-  // flex-direction: row;
-  // align-content: center;
-  @media screen and (min-width: 768px) {
-    display: flex;
-
-  }
-
-  @media screen and (min-width: 1280px) {
-    display: flex;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: center;
+    
+    @media screen and (min-width: 768px) {
+      display: flex;
+  
+    }
+  
+    @media screen and (min-width: 1280px) {
+      display: flex;
+    }
   }
 }
-
-
-.button__list {
-  text-align: center;
-
-  @media screen and (min-width: 768px) {
-    display: flex;
-    justify-content: center;
-  }
-}
-
 .card__button {
   font-family: $main-font;
   font-style: normal;
@@ -232,8 +220,8 @@
   align-items: center;
   text-align: center;
   border-radius: 22px;
-  background-color: #d41342;
-  color: #ffffff;
+  background-color: $button-color;
+  color: $title-color;
   border: 0px solid transparent;
   margin-bottom: 10px;
 
@@ -246,21 +234,22 @@
   }
 }
 .card__button-white {
-  background-color: #ffffff;
-  color: #d41443;
+  background-color: $title-color;
+  color: $button-color;
   margin-bottom: 0;
 
   &:hover {
     background-color: rgba(255, 245, 246, 0);
+  
   }
-}
-.button__svg {
-  margin-left: 13px;
-}
-.button__svg-white {
-  fill: #ffffff;
-  margin-left: 8px;
-}
-.button__svg-red {
-  fill: #d41443;
+  .button__svg {
+    margin-left: 13px;
+  }
+  .button__svg-white {
+    fill: $title-color;
+    margin-left: 8px;
+  }
+  .button__svg-red {
+    fill: $button-color;
+  }
 }
