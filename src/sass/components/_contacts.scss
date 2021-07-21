@@ -1,14 +1,6 @@
 .card {
-
   background: $main-section-background-color;
-  @media screen and (min-width: 1280px) {
-    background-image:  url(../images/icons/icons-contacts-footer/contacts-background.png);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: 1280px 382px;
-  }
 }
-
 .card__list {
 
   list-style: none;
@@ -31,6 +23,12 @@
     margin-bottom: -28.5px;
     flex-direction: row;
     top: -102px;
+  }
+  @media screen and (min-width: 1280px) {
+    background-image:  url(../images/icons/icons-contacts-footer/contacts-background.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 1280px 382px;
   }
 }
 .card__box {
