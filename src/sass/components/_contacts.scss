@@ -1,4 +1,6 @@
 .card {
+  background: #fff5f6;
+
   background: #f0d2d5;
 }
 .card__list {
@@ -39,6 +41,51 @@
   @media screen and (min-width: 768px) {
     max-width: 220px;
   }
+
+  @media screen and (min-width: 1280px) {
+    max-width: 330px;
+  }
+}
+.card__padding {
+  padding: 43px 20px;
+}
+.card__place {
+  background-color: #f0d1a5;
+  margin-bottom: 25px;
+
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+  width: 80px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+  border-radius: 4px;
+  color: #ffffff;
+}
+.card__place-foodtruck {
+  background-color: #c2e297;
+  width: 130px;
+}
+.card__city {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+  letter-spacing: 0.04em;
+  color: black;
+  margin-bottom: 10px;
+}
+.card__text {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 150%;
+  color: #907e82;
 
   @media screen and (min-width: 1280px) {
     max-width: 330px;
@@ -132,22 +179,12 @@
 .buttton {
   display: flex;
 }
+
 .button__list {
-  width: 161px;
-  height: 44px;
   text-align: center;
-  display: unset;
-  // display: flex;
-  // flex-wrap: wrap;
-  // justify-content: center;
-  // flex-direction: row;
-  // align-content: center;
   @media screen and (min-width: 768px) {
     display: flex;
-  }
-
-  @media screen and (min-width: 1280px) {
-    display: flex;
+    justify-content: center;
   }
 }
 
@@ -159,6 +196,7 @@
     justify-content: center;
   }
 }
+
 .card__button {
   font-family: $main-font;
   font-style: normal;
@@ -172,6 +210,9 @@
   color: #ffffff;
   border: 0px solid transparent;
   margin-bottom: 10px;
+
+  margin-right: 15px;
+
   width: 161px;
   height: 44px;
   &:hover {
