@@ -27,7 +27,6 @@
 }
 
 .menu__container {
-
   position: absolute;
 
   position: fixed;
@@ -44,14 +43,23 @@
   flex-direction: column;
 
   z-index: 55;
-  transform: translateX(100%);
+  // transform: translateX(250px);
 
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  // transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.menu__container {
-  transform: translateX(0);
+@keyframes animateX250 {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(250px);
+  }
 }
+// .menu__container {
+//   transform: translateX(0);
+// }
 
 .menu__close {
   position: absolute;
@@ -60,7 +68,6 @@
   background-color: $background-burger-color;
   border: none;
   cursor: pointer;
-
 
   transform: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -83,7 +90,6 @@
   background-color: $background-burger-color;
   border: none;
   cursor: pointer;
-
 
   @media screen and(min-width: 768px) {
     right: 34px;
