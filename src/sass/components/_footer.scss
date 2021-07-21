@@ -90,7 +90,7 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     &:hover{
         cursor: pointer;
-        background-color: #D41342;
+        background-color: $button-color;
     }
     @media screen and (min-width: 768px) {
         width: 34px;
@@ -122,7 +122,6 @@
 }
 .footer__number{
     color: $button-color;
-    
 }
 .copyright{
     &::before {
