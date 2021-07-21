@@ -1,32 +1,44 @@
 <header class="header">
-  <div class="container header">
+  <div class="container container-header">
     <a href="" class="logo"><img src="./images/icons/logo.png" alt="" /></a>
-    <nav class="menu">
-      <ul class="menu-list">
-        <li class="menu-list__item"><span class="menu-list__text">Home</span></li>
-        <li class="menu-list__item">About us</li>
-        <li class="menu-list__item">How it’s made?</li>
-        <li class="menu-list__item">Our products</li>
-        <li class="menu-list__item">Contact</li>
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-list__item nav-list__item--active">Home</li>
+        <li class="nav-list__item">About us</li>
+        <li class="nav-list__item">How it’s made?</li>
+        <li class="nav-list__item">Our products</li>
+        <li class="nav-list__item">Contact</li>
       </ul>
-      <button type="button" class="header-btn">Buy now</button>
     </nav>
-    <button type="button" class="menu__open">
-      <svg width="20px" height="12px" aria-label="Открытие мобильного меню">
-        <use class="menu__icon" href="./images/icons/sprite.svg#icon-menu-open"></use>
-      </svg>
-    </button>
+    <div class="header__right">
+      <button type="button" class="menu__open">
+        <svg width="20px" height="12px" aria-label="Открытие мобильного меню">
+          <use class="menu__icon" href="./images/icons/sprite.svg#icon-menu-open"></use>
+        </svg>
+      </button>
+      <button type="button" class="button_header-buy button_header-buy--onmain">Buy now</button>
+    </div>
   </div>
-
   <section class="section hero-section">
     <div class="hero container">
-      <h1 class="hero__title--pre">ice cream <br> made with <br><span class="hero__title"> passion</span>
+      <h1 class="hero__title--pre">
+        ice cream <br />
+        made with <br /><span class="hero__title"> passion</span>
       </h1>
       <div class="hero__button">
         <button class="button_header button_header-prodact">Products</button>
-        <button class="button_header ">How it’s made?</button>
+        <button class="button_header">How it’s made?</button>
       </div>
       <img src="./images/header/header-pic_m_1x-min.png" class="hero__img" alt="icecream" />
+      <div class="text-box">
+        <p class="milk-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et
+        </p>
+      </div>
+      <img src="./images/header/header-milk_t_1x-min.png" class="hero__img--milk" alt="icecream" />
+      <button type="button" class="milk-button"></button>
+      <img src="./images/header/header-girl_t_1x-min.png" class="hero__img--girl" alt="icecream" />
     </div>
   </section>
 </header>
