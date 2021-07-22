@@ -58,14 +58,8 @@
     display: flex;
     margin: 0 auto;
     justify-content: flex-end;
-    margin-top: 43x;
     border-radius: 50%;
-    margin-bottom: 46px;
    
-    @media screen and (min-width: 1280px) {
-        margin-bottom: 50px;
-        
-    }
 }
 .networks__box{
     border-radius: 50%;
@@ -112,12 +106,14 @@
     display: block;
     text-align: right;
     margin-right: 28.24px;
-    
+    margin-top: 46px;
+
     @media screen and (min-width: 768px) {
         font-size: 14px;
       }
       @media screen and (min-width: 1280px) {
         font-size: 16px;
+        margin-top: 50px;
     }
 }
 .footer__number{
