@@ -19,6 +19,22 @@
   @media screen and (min-width: 768px) {
     display: inline-block;
   }
+  &::after {
+    background-image: url(../images/about/Vector-arrow-right.svg);
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+
+    position: absolute;
+    content: '';
+
+    right: 40px;
+    top: 57px;
+    @media screen and (min-width: 1280px) {
+      right: 120px;
+      top: 58px;
+    }
+  }
 }
 .nav-list {
   display: none;
@@ -39,6 +55,7 @@
   }
 }
 .hero-section {
+  width: 100%;
   overflow-x: hidden;
   &::after {
     content: '';
