@@ -119,6 +119,7 @@
       background-repeat: no-repeat;
       background-image: url(/images/header/header-ellipse_t_1x-min.png);
       background-position: right;
+      right: 0;
       top: 27px;
       left: 269px;
       z-index: 1;
@@ -141,6 +142,10 @@
     bottom: 12%;
     width: 114px;
     height: 48px;
+    display: none;
+    @media screen and (min-width: 768px) {
+      display: block;
+    }
     // justify-content: space-between;
   }
   .hero__img--milk {
