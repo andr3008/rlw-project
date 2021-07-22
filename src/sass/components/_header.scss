@@ -234,6 +234,14 @@
   .hero {
     height: 665px;
   }
+  .hero__img--milk {
+    position: absolute;
+    width: 188px;
+    height: 191px;
+    left: 4%;
+    bottom: 5%;
+    margin: 0;
+  }
   .hero__img {
     position: absolute;
     width: 236px;
@@ -250,6 +258,22 @@
     top: 10%;
     left: 40%;
     z-index: 1;
+  }
+  .hero__title--pre,
+  .hero__title {
+    width: 277px;
+  }
+  .hero__title--pre {
+    font-size: 38px;
+    line-height: 44px;
+    padding-top: 115px;
+    top: 10%;
+    left: 3%;
+  }
+  .hero__button {
+    position: absolute;
+    left: 6%;
+    top: 52%;
   }
   .numerals-box {
     top: 30%;
