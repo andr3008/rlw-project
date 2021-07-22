@@ -13,18 +13,7 @@
     padding: 37px 115px 0 49px;
   }
 }
-.menu__open {
-  width: 20px;
-  height: 12px;
-  background-color: $background-hero-color;
-  border: none;
-  @media screen and (min-width: 768px) {
-    margin-right: 30px;
-  }
-  @media screen and (min-width: 1280px) {
-    display: none;
-  }
-}
+
 .button_header-buy--onmain {
   display: none;
   @media screen and (min-width: 768px) {
