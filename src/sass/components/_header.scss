@@ -128,6 +128,25 @@
       display: block;
     }
   }
+  .milk-button {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    background-image: url(/images/header/arrow-right-min.png);
+    background-size: cover;
+    border: none;
+    margin-top: 7px;
+    display: block;
+    @media screen and (min-width: 1280px) {
+      margin-top: 20px;
+    }
+
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+
   .hero__img--milk {
     position: absolute;
     width: 124px;
@@ -286,11 +305,20 @@
   line-height: 10px;
   text-align: right;
 }
+
 .milk-button {
+  width: 26px;
+  height: 26px;
   border-radius: 50%;
   background-color: #ffffff;
-  background-image: url(../images/header/arrow-right-min.png);
+  background-image: url(/images/header/arrow-right-min.png);
+  background-size: cover;
   border: none;
   bottom: 7%;
   left: 20%;
+  display: block;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
