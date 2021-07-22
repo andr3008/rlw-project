@@ -84,6 +84,69 @@
   }
 }
 
+.numerals-box {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  position: absolute;
+  top: 35%;
+  right: 34px;
+  transform: translateY(-50%);
+}
+.numerals-list__numeral16,
+.numerals-list__numeral23 {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  position: relative;
+  width: 33px;
+  height: 32px;
+  font-family: $accent-font;
+  font-size: 28px;
+  line-height: 32px;
+  text-align: right;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $subtitle-color;
+  &::after {
+    content: '';
+    display: inline;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: #ffffff;
+    transform: matrix(-1, 0, 0, 1, 0, 0) translateY(-16px);
+    border-radius: 50%;
+    top: 50%;
+    left: 24px;
+    z-index: -1;
+  }
+}
+.numerals-list__numeral23 {
+  width: 36px;
+  height: 32px;
+}
+.numerals-list__text {
+  font-family: $main-font;
+  font-size: 8px;
+  line-height: 10px;
+  text-align: right;
+}
+
+.milk-button {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  background-image: url(../images/header/arrow-right-min.png);
+  border: none;
+}
+
 @media screen and (min-width: 768px) {
   .hero {
     height: 399px;
@@ -123,7 +186,6 @@
     bottom: 12%;
     width: 114px;
     height: 48px;
-    // justify-content: space-between;
   }
   .milk-button {
     width: 26px;
@@ -176,57 +238,6 @@
     font-size: 8px;
     line-height: 12px;
     color: #ffffff;
-  }
-  .numerals-box {
-    position: absolute;
-    top: 35%;
-    right: 34px;
-    transform: translateY(-50%);
-  }
-  .numerals-list__numeral16,
-  .numerals-list__numeral23 {
-    position: relative;
-    width: 33px;
-    height: 32px;
-    font-family: $accent-font;
-    font-size: 28px;
-    line-height: 32px;
-    text-align: right;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: $subtitle-color;
-    &::after {
-      content: '';
-      display: inline;
-      position: absolute;
-      width: 16px;
-      height: 16px;
-      background: #ffffff;
-      transform: matrix(-1, 0, 0, 1, 0, 0) translateY(-16px);
-      border-radius: 50%;
-      top: 50%;
-      left: 24px;
-      z-index: -1;
-    }
-  }
-  .numerals-list__numeral23 {
-    width: 36px;
-    height: 32px;
-  }
-  .numerals-list__text {
-    font-family: $main-font;
-    font-size: 8px;
-    line-height: 10px;
-    text-align: right;
-  }
-  .milk-button {
-    position: absolute;
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
-    background-color: #ffffff;
-    background-image: url(../images/header/arrow-right-min.png);
-    border: none;
   }
 }
 @media screen and (min-width: 1280px) {
