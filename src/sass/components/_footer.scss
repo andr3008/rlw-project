@@ -15,7 +15,6 @@
   }
 }
 .footer-container {
-
   width: 100%;
 
   @media screen and (min-width: 768px) {
@@ -33,11 +32,11 @@
   margin-bottom: 31px;
   @media screen and (min-width: 768px) {
     width: 340px;
-    margin-bottom: 0;
+    margin-left: 25px;
   }
   @media screen and (min-width: 1280px) {
     width: 474px;
-    margin-bottom: 0;
+    margin-left: 38px;
   }
 }
 .footer .section__title {
@@ -55,12 +54,11 @@
 }
 .networks {
   display: block;
-
+  margin-top: 10px;
 }
 .networks__list {
   display: flex;
   margin: 0 auto;
-
 
   @media screen and (min-width: 768px) {
     position: absolute;
@@ -72,7 +70,6 @@
 }
 .networks__list:not(:last-child) {
   display: flex;
-
 
   justify-content: flex-end;
   border-radius: 50%;
