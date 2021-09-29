@@ -2,13 +2,12 @@
   background-color: $background-hero-color;
 }
 .container-header {
-  
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 6px 20px 0px 20px;
+  padding: 6px 20px 0px 0px;
   @media screen and (min-width: 768px) {
-    padding: 37px 34px 0 34px;
+    padding: 37px 55px 0 0px;
   }
   @media screen and (min-width: 1280px) {
     padding: 37px 115px 0 49px;
@@ -29,12 +28,16 @@
     position: absolute;
     content: '';
 
-    right: 40px;
+    right: 60px;
     top: 57px;
     @media screen and (min-width: 1280px) {
       right: 120px;
       top: 58px;
     }
+  }
+  &:hover {
+    background-color: $hover-button-color;
+    color: $subtitle-color;
   }
 }
 .nav-list {
@@ -55,6 +58,7 @@
     color: $subtitle-color;
   }
 }
+//
 .hero-section {
   width: 100%;
   overflow-x: hidden;
@@ -74,7 +78,6 @@
   position: relative;
   height: 446px;
   padding-left: 20px;
-  z-index: 1000000;
 }
 .hero__title--pre {
   position: relative;
@@ -86,13 +89,14 @@
   color: $title-color;
   padding-top: 137px;
   padding-bottom: 19px;
+  z-index: 10;
 }
 .hero__img {
   position: absolute;
   height: 410px;
   bottom: 0;
   right: 10%;
-  z-index: -1;
+  z-index: 9;
 }
 .milk-text,
 .hero__img--milk,
@@ -230,6 +234,7 @@
     width: 124px;
     height: 126px;
     margin: 0;
+    top: 65%;
   }
   .hero__img--girl {
     position: absolute;
@@ -238,6 +243,7 @@
     width: 168px;
     height: 133px;
     margin: 0;
+    z-index: 11;
   }
   .hero__title--pre,
   .hero__title {
@@ -246,10 +252,9 @@
   .hero__title--pre {
     font-size: 22px;
     padding-top: 115px;
+    z-index: 2;
   }
-  .hero__button {
-    margin-bottom: 19px;
-  }
+
   .milk-text {
     font-family: $main-font;
     font-style: normal;
@@ -275,6 +280,7 @@
   .hero__img--girl {
     width: 293px;
     height: 233px;
+    z-index: 11;
   }
   .hero__img {
     position: absolute;
@@ -308,11 +314,7 @@
     top: 10%;
     left: 3%;
   }
-  .hero__button {
-    position: absolute;
-    left: 6%;
-    top: 52%;
-  }
+
   .numerals-box {
     top: 30%;
     right: 100px;
@@ -345,4 +347,14 @@
 }
 .button_header-prodact {
   margin-right: 5px;
+}
+.hero__button {
+  position: absolute;
+  left: 6%;
+
+  margin-bottom: 19px;
+  z-index: 11;
+  @media screen and (min-width: 1280px) {
+    top: 52%;
+  }
 }

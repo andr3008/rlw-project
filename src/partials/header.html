@@ -1,23 +1,28 @@
 <header class="header">
-  <div class="container container-header">
-    <a href="" class="logo"><img src="./images/icons/logo.png" alt="" /></a>
-    <nav class="nav">
-      <ul class="nav-list">
-        <li class="nav-list__item nav-list__item--active">
-          <a href="./index.html">Home</a>
-        </li>
-        <li class="nav-list__item"><a href="#about-us">About us</a></li>
-        <li class="nav-list__item"><a href="#about">How it’s made?</a></li>
-        <li class="nav-list__item"><a href="#our-products">Our products</a></li>
-        <li class="nav-list__item"><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="header__right">
-      <button type="button" class="button_header-buy button_header-buy--onmain">Buy now</button>
-    </div>
-  </div>
-  <section class="section hero-section">
+  <section class="section">
     <div class="hero container">
+      <div class="container container-header">
+        <button type="button" class="menu__open">
+          <svg width="20px" height="12px" aria-label="Открытие мобильного меню">
+            <use class="menu__icon" href="./images/icons/sprite.svg#icon-menu-open"></use>
+          </svg>
+        </button>
+        <a href="" class="logo"><img src="./images/icons/logo.png" alt="" /></a>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-list__item nav-list__item--active">
+              <a href="./index.html">Home</a>
+            </li>
+            <li class="nav-list__item"><a href="#about-us">About us</a></li>
+            <li class="nav-list__item"><a href="#about">How it’s made?</a></li>
+            <li class="nav-list__item"><a href="#our-products">Our products</a></li>
+            <li class="nav-list__item"><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header__right">
+          <button type="button" class="button_header-buy button_header-buy--onmain">Buy now</button>
+        </div>
+      </div>
       <h1 class="hero__title--pre">
         ice cream <br />
         made with <br /><span class="hero__title"> passion</span>
@@ -26,30 +31,32 @@
         <button class="button_header button_header-prodact">Products</button>
         <button class="button_header">How it’s made?</button>
       </div>
-      <picture>
-        <source
-          srcset="
-            ./images/header/header-pic_d_1x-min.png 1x,
-            ./images/header/header-pic_d_2x-min.png 2x
-          "
-          media="(min-width: 1200px)"
-        />
-        <source
-          srcset="
-            ./images/header/header-pic_t_1x-min.png 1x,
-            ./images/header/header-pic_t_2x-min.png 2x
-          "
-          media="(min-width: 768px)"
-        />
-        <source
-          srcset="
-            ./images/header/header-pic_m_1x-min.png 1x,
-            ./images/header/header-pic_m_2x-min.png 2x
-          "
-          media="(min-width: 480px)"
-        />
-        <img src="./images/header/header-pic_m_1x-min.png" class="hero__img" alt="icecream" />
-      </picture>
+      <div class="hero-section">
+        <picture>
+          <source
+            srcset="
+              ./images/header/header-pic_d_1x-min.png 1x,
+              ./images/header/header-pic_d_2x-min.png 2x
+            "
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="
+              ./images/header/header-pic_t_1x-min.png 1x,
+              ./images/header/header-pic_t_2x-min.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./images/header/header-pic_m_1x-min.png 1x,
+              ./images/header/header-pic_m_2x-min.png 2x
+            "
+            media="(min-width: 480px)"
+          />
+          <img src="./images/header/header-pic_m_1x-min.png" class="hero__img" alt="icecream" />
+        </picture>
+      </div>
 
       <div class="text-box">
         <p class="milk-text">
